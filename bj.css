@@ -1,0 +1,27 @@
+html {
+  font-size: 75%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("cartes/images/bkg.jpg");
+}
+
+#corps {
+  color: aliceblue;
+  background-image: url("cartes/images/fond.jpg");
+  font-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px white solid;
+  width: 650px;
+
+  border-radius: 100%;
+}
+img {
+  border: solid rgb(192, 179, 4) 3px;
+  margin: 2px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack SIO 2021</title>
+    <script src="bj.js"></script>
+    <link rel="stylesheet" href="bj.css" />
+  </head>
+  <body>
+    <div id="corps">
+      <h1 id="h1BJ"><b>BlackJack</b></h1>
+      <h2 id="h2Banque"><b>Les cartes de la banque</b></h2>
+      <div id="divBanque">
+        <img id="cBanque" src="" alt="carte de la banque" />
+      </div>
+      <h2><b>Vos cartes</b></h2>
+      <div id="divJoueur">
+        <img id="cJoueur" src="" alt="carte du joueur" />
+      </div>
+      <p id="pBanque"></p>
+      <p id="pJoueur"></p>
+      <p id="moneydisplay"></p>
+      <form id="buttons">
+        <input
+          id="card"
+          type="button"
+          value="Carte"
+          onclick="return tirage();"
+        />
+        <input
+          id="stay"
+          type="button"
+          value="Reste"
+          onclick="return rester();"
+        />
+        <input
+          id="replay"
+          type="button"
+          value="Rejouer"
+          onclick="return retry();"
+        />
+        <input
+          id="betbutton"
+          type="button"
+          value="Miser 1000$"
+          onclick="return mise();"
+        />
+      </form>
+    </div>
+  </body>
+</html>
