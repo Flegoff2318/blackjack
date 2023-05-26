@@ -188,6 +188,20 @@ function mise() {
   }
   return false;
 }
+
+function allin(){
+  if(monies>0){
+    bet = bet + monies;
+    pari = 1;
+    monies=0;
+    document.getElementById("moneydisplay").innerHTML =
+      "Vous avez " + monies + "$.<br>All in ! Vous avez misé <b>" + bet + "</b>$.";
+  } else{
+    document.getElementById("moneydisplay").innerHTML = "T'es à la rue frérot !";
+  }
+  return false;
+}
+
 function retry() {
   bet = 0;
   compteJoueur = 0;
